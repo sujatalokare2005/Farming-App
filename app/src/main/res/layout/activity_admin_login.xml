@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".AdminLogin">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img" />
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_margin="20dp" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etxtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Username"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_margin="30dp" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_margin="30dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#000000"
+        android:id="@+id/btnlogin"
+        android:onClick="btnLoginclick" />
+
+</LinearLayout>

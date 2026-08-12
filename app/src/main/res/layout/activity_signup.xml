@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Short Farmer Logo / Title -->
+        <TextView
+            android:id="@+id/txtFarmerLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="शेतकरी मित्र"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Form Fields -->
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="पूर्ण नाव"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="पत्ता"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="मोबाइल नंबर"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="पासवर्ड"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="शेतकरी नोंदणी"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+</ScrollView>

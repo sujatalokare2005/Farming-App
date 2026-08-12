@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmingApp"
+        tools:targetApi="31">
+        <meta-data
+            android:name="firebase_database_url"
+            android:value="https://your-project-id.firebaseio.com" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".admin_dashboard" android:exported="false"/>
+        <activity android:name=".AdminLogin" android:exported="false"/>
+        <activity android:name=".CustomerHomeActivity" android:exported="false"/>
+        <activity android:name=".AddProductChoiceActivity" android:exported="false"/>
+        <activity android:name=".AddSeedsActivity" android:exported="false"/>
+        <activity android:name=".AddFertilizerActivity" android:exported="false"/>
+        <activity android:name=".AddPesticidesActivity" android:exported="false"/>
+        <activity android:name=".SeeProductsActivity" android:exported="false"/>
+        <activity android:name=".ViewSeedsActivity" android:exported="false"/>
+        <activity android:name=".ViewFertilizerActivity" android:exported="false"/>
+        <activity android:name=".ViewPesticidesActivity" android:exported="false"/>
+        <activity android:name=".UpdateProductChoiceActivity" android:exported="false"/>
+        <activity android:name=".CustomerLoginActivity" android:exported="false"/>
+        <activity android:name=".PlaceSeedsOrderActivity" android:exported="false"/>
+        <activity android:name=".PlaceFertilizerOrderActivity" android:exported="false"/>
+        <activity android:name=".PlacePesticidesOrderActivity" android:exported="false"/>
+        <activity android:name=".ViewAllOrdersActivity" android:exported="false"/>
+        <activity android:name=".UpdateSeedsActivity" android:exported="false"/>
+        <activity android:name=".UpdateFertilizerActivity" android:exported="false"/>
+        <activity android:name=".UpdatePesticidesActivity" android:exported="false"/>
+        <activity android:name=".DeleteProductChoiceActivity" android:exported="false"/>
+        <activity android:name=".DeleteSeedsActivity" android:exported="false"/>
+        <activity android:name=".DeleteFertilizerActivity" android:exported="false"/>
+        <activity android:name=".DeletePesticidesActivity" android:exported="false"/>
+        <activity android:name=".SignUpActivity" android:exported="false"/>
+        <activity android:name=".ProfileActivity" android:exported="false"/>
+        <activity android:name=".LoginActivity" android:exported="false"/>
+        <activity android:name=".UserDashboardActivity" android:exported="false"/>
+        <activity android:name=".LoginForBuyActivity" android:exported="false"/>
+        <activity android:name=".UserOrdersActivity" android:exported="false"/>
+        <activity android:name=".AddToCartActivity" android:exported="false"/>
+        <activity android:name=".CartLoginActivity" android:exported="false"/>
+        <activity android:name=".UserCartActivity" android:exported="false"/>
+        <activity android:name=".UserFeedback" android:exported="false"/>
+        <activity android:name=".ViewFeedbackActivity" android:exported="false"/>
+
+
+
+
+    </application>
+
+</manifest>

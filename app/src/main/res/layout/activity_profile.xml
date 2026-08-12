@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Content Overlay -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"> <!-- Semi-transparent overlay -->
+
+        <!-- Image at the top -->
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:contentDescription="Top Image"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_4" />
+
+        <!-- Space between image and buttons -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#804CAF50"
+            android:text="जर तुमचे पहिले खाते नसेल, तर येथे साइन अप करा"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="जर खाते असेल, तर येथे लॉगिन करा"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#801E88E5" />
+
+    </LinearLayout>
+
+</FrameLayout>

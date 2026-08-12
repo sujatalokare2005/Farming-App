@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="आपले ऑर्डर फॉर्म"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subheading / message for farmers -->
+        <TextView
+            android:id="@+id/tvSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="शेतकऱ्यांसाठी सोपा आणि जलद ऑर्डर फॉर्म"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Form Fields Container -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="24dp">
+
+            <!-- Customer Name -->
+            <EditText
+                android:id="@+id/etCustomerName"
+                android:hint="ग्राहकाचे नाव"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+
+            <!-- Mobile Number -->
+            <EditText
+                android:id="@+id/etCustomerMobile"
+                android:hint="मोबाइल नंबर"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/etCustomerAddress"
+                android:hint="पत्ता"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/tvProductName"
+                android:text="उत्पादन नाव"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <!-- Quantity -->
+            <EditText
+                android:id="@+id/etQuantity"
+                android:hint="प्रमाण"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"/>
+
+            <!-- Cash on Delivery -->
+            <CheckBox
+                android:id="@+id/cbCashOnDelivery"
+                android:text="कॅश ऑन डिलीव्हरी"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textColor="#000000"/>
+
+            <!-- Place Order Button -->
+            <Button
+                android:id="@+id/btnPlaceOrder"
+                android:text="ऑर्डर ठेवा"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#1E88E5"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:padding="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

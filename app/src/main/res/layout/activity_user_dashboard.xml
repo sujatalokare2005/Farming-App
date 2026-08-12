@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF0D8"> <!-- Light green farmer-friendly background -->
+
+    <!-- Welcome Text Above Profile Image -->
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="कृषी सेवा केंद्रमध्ये स्वागत आहे"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- User Profile Image (centered) -->
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_5"
+        android:contentDescription="User Profile"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- Horizontal Layout for Orders and Cart Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_marginBottom="16dp">
+
+        <!-- Orders Button (Left) -->
+        <Button
+            android:id="@+id/btnOrders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="मी मागवलेली उत्पादने"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Cart Button (Right) -->
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="मला आवडलेली उत्पादने"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Feedback Button -->
+    <Button
+        android:id="@+id/btnFeedback"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E7D32"
+        android:text="तुमचे मत द्या"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

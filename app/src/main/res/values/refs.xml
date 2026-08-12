@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="placeholder_image" />
+    <drawable name="ic_add_photo" />
+    <drawable name="ic_placeholder_image" />
+    <drawable name="ic_baseline_add_photo_alternate_24" />
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#A5D6A7"> <!-- Light green background -->
+
+    <!-- Heading -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="कृषी सेवा मध्ये आपले स्वागत आहे"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Image in the center -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_1"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Admin Button (Left side) -->
+        <Button
+            android:id="@+id/btnAdmin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="प्रशासक (Admin)"
+            android:padding="16dp"
+            android:backgroundTint="#FFC107"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Customer Button (Right side) -->
+        <Button
+            android:id="@+id/btnCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ग्राहक (Customer)"
+            android:padding="16dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
